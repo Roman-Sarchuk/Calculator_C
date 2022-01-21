@@ -44,7 +44,7 @@ void logic(float x, char operation, float y) {
 		printf("Result: %f\n\n", x * y);
 	else if (operation == '/')
 		if (y == 0)
-			printf("Result: ! На нуль ділити не можна \n\n!");
+			printf("Result: ! ГЌГ  Г­ГіГ«Гј Г¤ВіГ«ГЁГІГЁ Г­ГҐ Г¬Г®Г¦Г­Г  \n\n!");
 		else
 			printf("Result: %f\n\n", x / y);
 }
