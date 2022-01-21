@@ -1,6 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <Windows.h>
 #include <stdbool.h>
 
 void txt(float* x, char* operation, float* y);
@@ -8,9 +7,6 @@ void logic(float x, char operation, float y);
 
 
 int main() {
-	SetConsoleOutputCP(1251);
-	SetConsoleCP(1251);
-
 	float x, y;
 	char oprt;
 
@@ -44,7 +40,9 @@ void logic(float x, char operation, float y) {
 		printf("Result: %f\n\n", x * y);
 	else if (operation == '/')
 		if (y == 0)
-			printf("Result: ! Íà íóëü ä³ëèòè íå ìîæíà \n\n!");
+			printf("Result: ! It is impossible to divide by zero !\n\n");
 		else
 			printf("Result: %f\n\n", x / y);
+	else
+		printf("! Error !\n\n");
 }
